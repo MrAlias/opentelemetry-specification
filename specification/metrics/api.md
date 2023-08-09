@@ -185,11 +185,12 @@ will have the following fields:
 * An optional `description`
 * Optional `advice` (**experimental**)
 
-Instruments are associated with the Meter during creation. Instruments
-are identified by all of these fields.
+Instruments are associated with the Meter during creation. The `name`, `kind`,
+`unit`, and `description` fields of the Instrument are identifying. The
+`advice` field is not identifying.
 
 Language-level features such as the distinction between integer and
-floating point numbers SHOULD be considered as identifying.
+floating point numbers SHOULD also be considered as identifying.
 
 The term *identical* applied to an Instrument describes instances where all
 identifying fields are equal.
